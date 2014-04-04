@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F7B9432518EF2DEC00943DAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B9432418EF2DEC00943DAE /* Foundation.framework */; };
+		F7B9432718EF2DEC00943DAE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B9432618EF2DEC00943DAE /* CoreGraphics.framework */; };
+		F7B9432918EF2DEC00943DAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B9432818EF2DEC00943DAE /* UIKit.framework */; };
+		F7B9432B18EF2DEC00943DAE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B9432A18EF2DEC00943DAE /* CoreData.framework */; };
+		F7B9433118EF2DEC00943DAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7B9432F18EF2DEC00943DAE /* InfoPlist.strings */; };
+		F7B9433318EF2DEC00943DAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9433218EF2DEC00943DAE /* main.m */; };
+		F7B9433718EF2DEC00943DAE /* VendiAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9433618EF2DEC00943DAE /* VendiAppDelegate.m */; };
+		F7B9433A18EF2DEC00943DAE /* VendiMobile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7B9433818EF2DEC00943DAE /* VendiMobile.xcdatamodeld */; };
+		F7B9433C18EF2DEC00943DAE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B9433B18EF2DEC00943DAE /* Images.xcassets */; };
+		F7B9434318EF2DEC00943DAE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B9434218EF2DEC00943DAE /* XCTest.framework */; };
+		F7B9434418EF2DEC00943DAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B9432418EF2DEC00943DAE /* Foundation.framework */; };
+		F7B9434518EF2DEC00943DAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B9432818EF2DEC00943DAE /* UIKit.framework */; };
+		F7B9434618EF2DEC00943DAE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B9432A18EF2DEC00943DAE /* CoreData.framework */; };
+		F7B9434E18EF2DEC00943DAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7B9434C18EF2DEC00943DAE /* InfoPlist.strings */; };
+		F7B9435018EF2DEC00943DAE /* VendiMobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9434F18EF2DEC00943DAE /* VendiMobileTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F7B9434718EF2DEC00943DAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7B9431918EF2DEC00943DAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7B9432018EF2DEC00943DAE;
+			remoteInfo = VendiMobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F7B9432118EF2DEC00943DAE /* VendiMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VendiMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7B9432418EF2DEC00943DAE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F7B9432618EF2DEC00943DAE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F7B9432818EF2DEC00943DAE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F7B9432A18EF2DEC00943DAE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F7B9432E18EF2DEC00943DAE /* VendiMobile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VendiMobile-Info.plist"; sourceTree = "<group>"; };
+		F7B9433018EF2DEC00943DAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F7B9433218EF2DEC00943DAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F7B9433418EF2DEC00943DAE /* VendiMobile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VendiMobile-Prefix.pch"; sourceTree = "<group>"; };
+		F7B9433518EF2DEC00943DAE /* VendiAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VendiAppDelegate.h; sourceTree = "<group>"; };
+		F7B9433618EF2DEC00943DAE /* VendiAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VendiAppDelegate.m; sourceTree = "<group>"; };
+		F7B9433918EF2DEC00943DAE /* VendiMobile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VendiMobile.xcdatamodel; sourceTree = "<group>"; };
+		F7B9433B18EF2DEC00943DAE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F7B9434118EF2DEC00943DAE /* VendiMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VendiMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7B9434218EF2DEC00943DAE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F7B9434B18EF2DEC00943DAE /* VendiMobileTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VendiMobileTests-Info.plist"; sourceTree = "<group>"; };
+		F7B9434D18EF2DEC00943DAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F7B9434F18EF2DEC00943DAE /* VendiMobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VendiMobileTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7B9431E18EF2DEC00943DAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B9432718EF2DEC00943DAE /* CoreGraphics.framework in Frameworks */,
+				F7B9432B18EF2DEC00943DAE /* CoreData.framework in Frameworks */,
+				F7B9432918EF2DEC00943DAE /* UIKit.framework in Frameworks */,
+				F7B9432518EF2DEC00943DAE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7B9433E18EF2DEC00943DAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B9434318EF2DEC00943DAE /* XCTest.framework in Frameworks */,
+				F7B9434618EF2DEC00943DAE /* CoreData.framework in Frameworks */,
+				F7B9434518EF2DEC00943DAE /* UIKit.framework in Frameworks */,
+				F7B9434418EF2DEC00943DAE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F7B9431818EF2DEC00943DAE = {
+			isa = PBXGroup;
+			children = (
+				F7B9432C18EF2DEC00943DAE /* VendiMobile */,
+				F7B9434918EF2DEC00943DAE /* VendiMobileTests */,
+				F7B9432318EF2DEC00943DAE /* Frameworks */,
+				F7B9432218EF2DEC00943DAE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7B9432218EF2DEC00943DAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7B9432118EF2DEC00943DAE /* VendiMobile.app */,
+				F7B9434118EF2DEC00943DAE /* VendiMobileTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7B9432318EF2DEC00943DAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7B9432418EF2DEC00943DAE /* Foundation.framework */,
+				F7B9432618EF2DEC00943DAE /* CoreGraphics.framework */,
+				F7B9432818EF2DEC00943DAE /* UIKit.framework */,
+				F7B9432A18EF2DEC00943DAE /* CoreData.framework */,
+				F7B9434218EF2DEC00943DAE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7B9432C18EF2DEC00943DAE /* VendiMobile */ = {
+			isa = PBXGroup;
+			children = (
+				F7B9433518EF2DEC00943DAE /* VendiAppDelegate.h */,
+				F7B9433618EF2DEC00943DAE /* VendiAppDelegate.m */,
+				F7B9433B18EF2DEC00943DAE /* Images.xcassets */,
+				F7B9433818EF2DEC00943DAE /* VendiMobile.xcdatamodeld */,
+				F7B9432D18EF2DEC00943DAE /* Supporting Files */,
+			);
+			path = VendiMobile;
+			sourceTree = "<group>";
+		};
+		F7B9432D18EF2DEC00943DAE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7B9432E18EF2DEC00943DAE /* VendiMobile-Info.plist */,
+				F7B9432F18EF2DEC00943DAE /* InfoPlist.strings */,
+				F7B9433218EF2DEC00943DAE /* main.m */,
+				F7B9433418EF2DEC00943DAE /* VendiMobile-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F7B9434918EF2DEC00943DAE /* VendiMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7B9434F18EF2DEC00943DAE /* VendiMobileTests.m */,
+				F7B9434A18EF2DEC00943DAE /* Supporting Files */,
+			);
+			path = VendiMobileTests;
+			sourceTree = "<group>";
+		};
+		F7B9434A18EF2DEC00943DAE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7B9434B18EF2DEC00943DAE /* VendiMobileTests-Info.plist */,
+				F7B9434C18EF2DEC00943DAE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7B9432018EF2DEC00943DAE /* VendiMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7B9435318EF2DED00943DAE /* Build configuration list for PBXNativeTarget "VendiMobile" */;
+			buildPhases = (
+				F7B9431D18EF2DEC00943DAE /* Sources */,
+				F7B9431E18EF2DEC00943DAE /* Frameworks */,
+				F7B9431F18EF2DEC00943DAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VendiMobile;
+			productName = VendiMobile;
+			productReference = F7B9432118EF2DEC00943DAE /* VendiMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F7B9434018EF2DEC00943DAE /* VendiMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7B9435618EF2DED00943DAE /* Build configuration list for PBXNativeTarget "VendiMobileTests" */;
+			buildPhases = (
+				F7B9433D18EF2DEC00943DAE /* Sources */,
+				F7B9433E18EF2DEC00943DAE /* Frameworks */,
+				F7B9433F18EF2DEC00943DAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7B9434818EF2DEC00943DAE /* PBXTargetDependency */,
+			);
+			name = VendiMobileTests;
+			productName = VendiMobileTests;
+			productReference = F7B9434118EF2DEC00943DAE /* VendiMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7B9431918EF2DEC00943DAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Vendi;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Vendi;
+				TargetAttributes = {
+					F7B9434018EF2DEC00943DAE = {
+						TestTargetID = F7B9432018EF2DEC00943DAE;
+					};
+				};
+			};
+			buildConfigurationList = F7B9431C18EF2DEC00943DAE /* Build configuration list for PBXProject "VendiMobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F7B9431818EF2DEC00943DAE;
+			productRefGroup = F7B9432218EF2DEC00943DAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7B9432018EF2DEC00943DAE /* VendiMobile */,
+				F7B9434018EF2DEC00943DAE /* VendiMobileTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7B9431F18EF2DEC00943DAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B9433118EF2DEC00943DAE /* InfoPlist.strings in Resources */,
+				F7B9433C18EF2DEC00943DAE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7B9433F18EF2DEC00943DAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B9434E18EF2DEC00943DAE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7B9431D18EF2DEC00943DAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B9433318EF2DEC00943DAE /* main.m in Sources */,
+				F7B9433A18EF2DEC00943DAE /* VendiMobile.xcdatamodeld in Sources */,
+				F7B9433718EF2DEC00943DAE /* VendiAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7B9433D18EF2DEC00943DAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B9435018EF2DEC00943DAE /* VendiMobileTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F7B9434818EF2DEC00943DAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7B9432018EF2DEC00943DAE /* VendiMobile */;
+			targetProxy = F7B9434718EF2DEC00943DAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F7B9432F18EF2DEC00943DAE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7B9433018EF2DEC00943DAE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F7B9434C18EF2DEC00943DAE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7B9434D18EF2DEC00943DAE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F7B9435118EF2DED00943DAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7B9435218EF2DED00943DAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7B9435418EF2DED00943DAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VendiMobile/VendiMobile-Prefix.pch";
+				INFOPLIST_FILE = "VendiMobile/VendiMobile-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F7B9435518EF2DED00943DAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VendiMobile/VendiMobile-Prefix.pch";
+				INFOPLIST_FILE = "VendiMobile/VendiMobile-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F7B9435718EF2DED00943DAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VendiMobile.app/VendiMobile";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VendiMobile/VendiMobile-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VendiMobileTests/VendiMobileTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F7B9435818EF2DED00943DAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VendiMobile.app/VendiMobile";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VendiMobile/VendiMobile-Prefix.pch";
+				INFOPLIST_FILE = "VendiMobileTests/VendiMobileTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7B9431C18EF2DEC00943DAE /* Build configuration list for PBXProject "VendiMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7B9435118EF2DED00943DAE /* Debug */,
+				F7B9435218EF2DED00943DAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7B9435318EF2DED00943DAE /* Build configuration list for PBXNativeTarget "VendiMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7B9435418EF2DED00943DAE /* Debug */,
+				F7B9435518EF2DED00943DAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F7B9435618EF2DED00943DAE /* Build configuration list for PBXNativeTarget "VendiMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7B9435718EF2DED00943DAE /* Debug */,
+				F7B9435818EF2DED00943DAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F7B9433818EF2DEC00943DAE /* VendiMobile.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F7B9433918EF2DEC00943DAE /* VendiMobile.xcdatamodel */,
+			);
+			currentVersion = F7B9433918EF2DEC00943DAE /* VendiMobile.xcdatamodel */;
+			path = VendiMobile.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F7B9431918EF2DEC00943DAE /* Project object */;
+}
