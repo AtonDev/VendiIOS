@@ -52,5 +52,19 @@
 */
 
 - (IBAction)submitInfo:(UIButton *)sender {
+    if ([self isValidForm]){
+        
+    } else {
+        UIAlertView *theAlert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                           message:@"No text box should be empty"
+                                                          delegate:self
+                                                 cancelButtonTitle:@"dismiss"
+                                                 otherButtonTitles:nil];
+        [theAlert show];
+    }
+}
+
+- (BOOL) isValidForm {
+    return !_ownerName && !_ownerEmail && !_itemTitle && !_itemCondition && !_itemDescription;
 }
 @end
