@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface InfoSubmitViewController : UIViewController
+@interface InfoSubmitViewController : UIViewController <NSURLConnectionDataDelegate, UITextFieldDelegate>
 @property (nonatomic) NSMutableArray *capturedImages;
 - (IBAction)submitInfo:(UIButton *)sender;
 @end

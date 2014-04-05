@@ -52,7 +52,7 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    if([segue.identifier isEqualToString:@"showDetailSegue"]){
+    if([segue.identifier isEqualToString:@"toInfoForm"]){
         InfoSubmitViewController *controller = (InfoSubmitViewController *)segue.destinationViewController;
         controller.capturedImages = self.capturedImages;
     }
