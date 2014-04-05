@@ -22,6 +22,10 @@
 		F7B9434618EF2DEC00943DAE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B9432A18EF2DEC00943DAE /* CoreData.framework */; };
 		F7B9434E18EF2DEC00943DAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7B9434C18EF2DEC00943DAE /* InfoPlist.strings */; };
 		F7B9435018EF2DEC00943DAE /* VendiMobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9434F18EF2DEC00943DAE /* VendiMobileTests.m */; };
+		F7B9435A18EF2E3700943DAE /* iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B9435918EF2E3700943DAE /* iphone.storyboard */; };
+		F7B9435F18EF2FBB00943DAE /* VendiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9435E18EF2FBB00943DAE /* VendiViewController.m */; };
+		F7B9436218EF789300943DAE /* ImageTakingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9436118EF789300943DAE /* ImageTakingViewController.m */; };
+		F7B9436518EF7BFD00943DAE /* InfoSubmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9436418EF7BFD00943DAE /* InfoSubmitViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,13 @@
 		F7B9434B18EF2DEC00943DAE /* VendiMobileTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VendiMobileTests-Info.plist"; sourceTree = "<group>"; };
 		F7B9434D18EF2DEC00943DAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F7B9434F18EF2DEC00943DAE /* VendiMobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VendiMobileTests.m; sourceTree = "<group>"; };
+		F7B9435918EF2E3700943DAE /* iphone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iphone.storyboard; sourceTree = "<group>"; };
+		F7B9435D18EF2FBB00943DAE /* VendiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VendiViewController.h; sourceTree = "<group>"; };
+		F7B9435E18EF2FBB00943DAE /* VendiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VendiViewController.m; sourceTree = "<group>"; };
+		F7B9436018EF789300943DAE /* ImageTakingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTakingViewController.h; sourceTree = "<group>"; };
+		F7B9436118EF789300943DAE /* ImageTakingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTakingViewController.m; sourceTree = "<group>"; };
+		F7B9436318EF7BFD00943DAE /* InfoSubmitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoSubmitViewController.h; sourceTree = "<group>"; };
+		F7B9436418EF7BFD00943DAE /* InfoSubmitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoSubmitViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +130,13 @@
 				F7B9433618EF2DEC00943DAE /* VendiAppDelegate.m */,
 				F7B9433B18EF2DEC00943DAE /* Images.xcassets */,
 				F7B9433818EF2DEC00943DAE /* VendiMobile.xcdatamodeld */,
+				F7B9435918EF2E3700943DAE /* iphone.storyboard */,
+				F7B9436318EF7BFD00943DAE /* InfoSubmitViewController.h */,
+				F7B9436418EF7BFD00943DAE /* InfoSubmitViewController.m */,
+				F7B9436018EF789300943DAE /* ImageTakingViewController.h */,
+				F7B9436118EF789300943DAE /* ImageTakingViewController.m */,
+				F7B9435D18EF2FBB00943DAE /* VendiViewController.h */,
+				F7B9435E18EF2FBB00943DAE /* VendiViewController.m */,
 				F7B9432D18EF2DEC00943DAE /* Supporting Files */,
 			);
 			path = VendiMobile;
@@ -201,6 +219,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Vendi;
 				TargetAttributes = {
+					F7B9432018EF2DEC00943DAE = {
+						DevelopmentTeam = HJ33E666JG;
+					};
 					F7B9434018EF2DEC00943DAE = {
 						TestTargetID = F7B9432018EF2DEC00943DAE;
 					};
@@ -229,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7B9435A18EF2E3700943DAE /* iphone.storyboard in Resources */,
 				F7B9433118EF2DEC00943DAE /* InfoPlist.strings in Resources */,
 				F7B9433C18EF2DEC00943DAE /* Images.xcassets in Resources */,
 			);
@@ -249,8 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7B9436518EF7BFD00943DAE /* InfoSubmitViewController.m in Sources */,
 				F7B9433318EF2DEC00943DAE /* main.m in Sources */,
+				F7B9435F18EF2FBB00943DAE /* VendiViewController.m in Sources */,
 				F7B9433A18EF2DEC00943DAE /* VendiMobile.xcdatamodeld in Sources */,
+				F7B9436218EF789300943DAE /* ImageTakingViewController.m in Sources */,
 				F7B9433718EF2DEC00943DAE /* VendiAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,10 +395,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VendiMobile/VendiMobile-Prefix.pch";
 				INFOPLIST_FILE = "VendiMobile/VendiMobile-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -383,10 +411,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VendiMobile/VendiMobile-Prefix.pch";
 				INFOPLIST_FILE = "VendiMobile/VendiMobile-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
