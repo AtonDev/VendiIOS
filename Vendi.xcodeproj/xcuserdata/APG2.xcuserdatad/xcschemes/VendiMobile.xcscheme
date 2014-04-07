@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F7B9432018EF2DEC00943DAE"
                BuildableName = "VendiMobile.app"
-               BlueprintName = "VendiMobile"
-               ReferencedContainer = "container:VendiMobile.xcodeproj">
+               BlueprintName = "Vendi"
+               ReferencedContainer = "container:Vendi.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F7B9434018EF2DEC00943DAE"
                BuildableName = "VendiMobileTests.xctest"
-               BlueprintName = "VendiMobileTests"
-               ReferencedContainer = "container:VendiMobile.xcodeproj">
+               BlueprintName = "VendiTests"
+               ReferencedContainer = "container:Vendi.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F7B9432018EF2DEC00943DAE"
             BuildableName = "VendiMobile.app"
-            BlueprintName = "VendiMobile"
-            ReferencedContainer = "container:VendiMobile.xcodeproj">
+            BlueprintName = "Vendi"
+            ReferencedContainer = "container:Vendi.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F7B9432018EF2DEC00943DAE"
             BuildableName = "VendiMobile.app"
-            BlueprintName = "VendiMobile"
-            ReferencedContainer = "container:VendiMobile.xcodeproj">
+            BlueprintName = "Vendi"
+            ReferencedContainer = "container:Vendi.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F7B9432018EF2DEC00943DAE"
             BuildableName = "VendiMobile.app"
-            BlueprintName = "VendiMobile"
-            ReferencedContainer = "container:VendiMobile.xcodeproj">
+            BlueprintName = "Vendi"
+            ReferencedContainer = "container:Vendi.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

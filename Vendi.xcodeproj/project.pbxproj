@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F702DB3318F20888000D834F /* VendiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F702DB3218F20888000D834F /* VendiViewController.m */; };
+		F702DB3518F30465000D834F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F702DB3418F30465000D834F /* Media.xcassets */; };
+		F702DB3A18F31BCD000D834F /* ThankYouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F702DB3918F31BCD000D834F /* ThankYouViewController.m */; };
 		F7B9432518EF2DEC00943DAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B9432418EF2DEC00943DAE /* Foundation.framework */; };
 		F7B9432718EF2DEC00943DAE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B9432618EF2DEC00943DAE /* CoreGraphics.framework */; };
 		F7B9432918EF2DEC00943DAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B9432818EF2DEC00943DAE /* UIKit.framework */; };
@@ -15,7 +18,6 @@
 		F7B9433318EF2DEC00943DAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9433218EF2DEC00943DAE /* main.m */; };
 		F7B9433718EF2DEC00943DAE /* VendiAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9433618EF2DEC00943DAE /* VendiAppDelegate.m */; };
 		F7B9433A18EF2DEC00943DAE /* VendiMobile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7B9433818EF2DEC00943DAE /* VendiMobile.xcdatamodeld */; };
-		F7B9433C18EF2DEC00943DAE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B9433B18EF2DEC00943DAE /* Images.xcassets */; };
 		F7B9434318EF2DEC00943DAE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B9434218EF2DEC00943DAE /* XCTest.framework */; };
 		F7B9434418EF2DEC00943DAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B9432418EF2DEC00943DAE /* Foundation.framework */; };
 		F7B9434518EF2DEC00943DAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B9432818EF2DEC00943DAE /* UIKit.framework */; };
@@ -23,9 +25,11 @@
 		F7B9434E18EF2DEC00943DAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7B9434C18EF2DEC00943DAE /* InfoPlist.strings */; };
 		F7B9435018EF2DEC00943DAE /* VendiMobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9434F18EF2DEC00943DAE /* VendiMobileTests.m */; };
 		F7B9435A18EF2E3700943DAE /* iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B9435918EF2E3700943DAE /* iphone.storyboard */; };
-		F7B9435F18EF2FBB00943DAE /* VendiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9435E18EF2FBB00943DAE /* VendiViewController.m */; };
 		F7B9436218EF789300943DAE /* ImageTakingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9436118EF789300943DAE /* ImageTakingViewController.m */; };
 		F7B9436518EF7BFD00943DAE /* InfoSubmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9436418EF7BFD00943DAE /* InfoSubmitViewController.m */; };
+		F7B9437718F1E6AE00943DAE /* FirstPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9437618F1E6AE00943DAE /* FirstPhotoViewController.m */; };
+		F7B9437A18F1EEC100943DAE /* VendiSubmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9437918F1EEC100943DAE /* VendiSubmitViewController.m */; };
+		F7B9437E18F1F9CE00943DAE /* ios-linen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F7B9437D18F1F9CE00943DAE /* ios-linen.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,31 +43,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F7B9432118EF2DEC00943DAE /* VendiMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VendiMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F702DB3118F20888000D834F /* VendiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VendiViewController.h; sourceTree = "<group>"; };
+		F702DB3218F20888000D834F /* VendiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VendiViewController.m; sourceTree = "<group>"; };
+		F702DB3418F30465000D834F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		F702DB3818F31BCD000D834F /* ThankYouViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThankYouViewController.h; sourceTree = "<group>"; };
+		F702DB3918F31BCD000D834F /* ThankYouViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThankYouViewController.m; sourceTree = "<group>"; };
+		F7B9432118EF2DEC00943DAE /* Vendi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vendi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B9432418EF2DEC00943DAE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F7B9432618EF2DEC00943DAE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F7B9432818EF2DEC00943DAE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F7B9432A18EF2DEC00943DAE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		F7B9432E18EF2DEC00943DAE /* VendiMobile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VendiMobile-Info.plist"; sourceTree = "<group>"; };
+		F7B9432E18EF2DEC00943DAE /* Vendi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Vendi-Info.plist"; sourceTree = "<group>"; };
 		F7B9433018EF2DEC00943DAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F7B9433218EF2DEC00943DAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F7B9433418EF2DEC00943DAE /* VendiMobile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VendiMobile-Prefix.pch"; sourceTree = "<group>"; };
+		F7B9433418EF2DEC00943DAE /* Vendi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Vendi-Prefix.pch"; sourceTree = "<group>"; };
 		F7B9433518EF2DEC00943DAE /* VendiAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VendiAppDelegate.h; sourceTree = "<group>"; };
 		F7B9433618EF2DEC00943DAE /* VendiAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VendiAppDelegate.m; sourceTree = "<group>"; };
 		F7B9433918EF2DEC00943DAE /* VendiMobile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VendiMobile.xcdatamodel; sourceTree = "<group>"; };
-		F7B9433B18EF2DEC00943DAE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F7B9434118EF2DEC00943DAE /* VendiMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VendiMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7B9434118EF2DEC00943DAE /* VendiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VendiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B9434218EF2DEC00943DAE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		F7B9434B18EF2DEC00943DAE /* VendiMobileTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VendiMobileTests-Info.plist"; sourceTree = "<group>"; };
+		F7B9434B18EF2DEC00943DAE /* VendiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VendiTests-Info.plist"; sourceTree = "<group>"; };
 		F7B9434D18EF2DEC00943DAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F7B9434F18EF2DEC00943DAE /* VendiMobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VendiMobileTests.m; sourceTree = "<group>"; };
 		F7B9435918EF2E3700943DAE /* iphone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iphone.storyboard; sourceTree = "<group>"; };
-		F7B9435D18EF2FBB00943DAE /* VendiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VendiViewController.h; sourceTree = "<group>"; };
-		F7B9435E18EF2FBB00943DAE /* VendiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VendiViewController.m; sourceTree = "<group>"; };
 		F7B9436018EF789300943DAE /* ImageTakingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTakingViewController.h; sourceTree = "<group>"; };
 		F7B9436118EF789300943DAE /* ImageTakingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTakingViewController.m; sourceTree = "<group>"; };
 		F7B9436318EF7BFD00943DAE /* InfoSubmitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoSubmitViewController.h; sourceTree = "<group>"; };
 		F7B9436418EF7BFD00943DAE /* InfoSubmitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoSubmitViewController.m; sourceTree = "<group>"; };
+		F7B9437518F1E6AE00943DAE /* FirstPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstPhotoViewController.h; sourceTree = "<group>"; };
+		F7B9437618F1E6AE00943DAE /* FirstPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstPhotoViewController.m; sourceTree = "<group>"; };
+		F7B9437818F1EEC100943DAE /* VendiSubmitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VendiSubmitViewController.h; sourceTree = "<group>"; };
+		F7B9437918F1EEC100943DAE /* VendiSubmitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VendiSubmitViewController.m; sourceTree = "<group>"; };
+		F7B9437D18F1F9CE00943DAE /* ios-linen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ios-linen.jpg"; path = "VendiMobile/ios-linen.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +106,8 @@
 		F7B9431818EF2DEC00943DAE = {
 			isa = PBXGroup;
 			children = (
+				F702DB3418F30465000D834F /* Media.xcassets */,
+				F7B9437D18F1F9CE00943DAE /* ios-linen.jpg */,
 				F7B9432C18EF2DEC00943DAE /* VendiMobile */,
 				F7B9434918EF2DEC00943DAE /* VendiMobileTests */,
 				F7B9432318EF2DEC00943DAE /* Frameworks */,
@@ -105,8 +118,8 @@
 		F7B9432218EF2DEC00943DAE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F7B9432118EF2DEC00943DAE /* VendiMobile.app */,
-				F7B9434118EF2DEC00943DAE /* VendiMobileTests.xctest */,
+				F7B9432118EF2DEC00943DAE /* Vendi.app */,
+				F7B9434118EF2DEC00943DAE /* VendiTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,15 +141,20 @@
 			children = (
 				F7B9433518EF2DEC00943DAE /* VendiAppDelegate.h */,
 				F7B9433618EF2DEC00943DAE /* VendiAppDelegate.m */,
-				F7B9433B18EF2DEC00943DAE /* Images.xcassets */,
 				F7B9433818EF2DEC00943DAE /* VendiMobile.xcdatamodeld */,
 				F7B9435918EF2E3700943DAE /* iphone.storyboard */,
-				F7B9436318EF7BFD00943DAE /* InfoSubmitViewController.h */,
-				F7B9436418EF7BFD00943DAE /* InfoSubmitViewController.m */,
+				F702DB3118F20888000D834F /* VendiViewController.h */,
+				F702DB3218F20888000D834F /* VendiViewController.m */,
+				F7B9437518F1E6AE00943DAE /* FirstPhotoViewController.h */,
+				F7B9437618F1E6AE00943DAE /* FirstPhotoViewController.m */,
 				F7B9436018EF789300943DAE /* ImageTakingViewController.h */,
 				F7B9436118EF789300943DAE /* ImageTakingViewController.m */,
-				F7B9435D18EF2FBB00943DAE /* VendiViewController.h */,
-				F7B9435E18EF2FBB00943DAE /* VendiViewController.m */,
+				F7B9436318EF7BFD00943DAE /* InfoSubmitViewController.h */,
+				F7B9436418EF7BFD00943DAE /* InfoSubmitViewController.m */,
+				F7B9437818F1EEC100943DAE /* VendiSubmitViewController.h */,
+				F7B9437918F1EEC100943DAE /* VendiSubmitViewController.m */,
+				F702DB3818F31BCD000D834F /* ThankYouViewController.h */,
+				F702DB3918F31BCD000D834F /* ThankYouViewController.m */,
 				F7B9432D18EF2DEC00943DAE /* Supporting Files */,
 			);
 			path = VendiMobile;
@@ -145,10 +163,10 @@
 		F7B9432D18EF2DEC00943DAE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F7B9432E18EF2DEC00943DAE /* VendiMobile-Info.plist */,
+				F7B9432E18EF2DEC00943DAE /* Vendi-Info.plist */,
 				F7B9432F18EF2DEC00943DAE /* InfoPlist.strings */,
 				F7B9433218EF2DEC00943DAE /* main.m */,
-				F7B9433418EF2DEC00943DAE /* VendiMobile-Prefix.pch */,
+				F7B9433418EF2DEC00943DAE /* Vendi-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -165,7 +183,7 @@
 		F7B9434A18EF2DEC00943DAE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F7B9434B18EF2DEC00943DAE /* VendiMobileTests-Info.plist */,
+				F7B9434B18EF2DEC00943DAE /* VendiTests-Info.plist */,
 				F7B9434C18EF2DEC00943DAE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -174,9 +192,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F7B9432018EF2DEC00943DAE /* VendiMobile */ = {
+		F7B9432018EF2DEC00943DAE /* Vendi */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F7B9435318EF2DED00943DAE /* Build configuration list for PBXNativeTarget "VendiMobile" */;
+			buildConfigurationList = F7B9435318EF2DED00943DAE /* Build configuration list for PBXNativeTarget "Vendi" */;
 			buildPhases = (
 				F7B9431D18EF2DEC00943DAE /* Sources */,
 				F7B9431E18EF2DEC00943DAE /* Frameworks */,
@@ -186,14 +204,14 @@
 			);
 			dependencies = (
 			);
-			name = VendiMobile;
+			name = Vendi;
 			productName = VendiMobile;
-			productReference = F7B9432118EF2DEC00943DAE /* VendiMobile.app */;
+			productReference = F7B9432118EF2DEC00943DAE /* Vendi.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F7B9434018EF2DEC00943DAE /* VendiMobileTests */ = {
+		F7B9434018EF2DEC00943DAE /* VendiTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F7B9435618EF2DED00943DAE /* Build configuration list for PBXNativeTarget "VendiMobileTests" */;
+			buildConfigurationList = F7B9435618EF2DED00943DAE /* Build configuration list for PBXNativeTarget "VendiTests" */;
 			buildPhases = (
 				F7B9433D18EF2DEC00943DAE /* Sources */,
 				F7B9433E18EF2DEC00943DAE /* Frameworks */,
@@ -204,9 +222,9 @@
 			dependencies = (
 				F7B9434818EF2DEC00943DAE /* PBXTargetDependency */,
 			);
-			name = VendiMobileTests;
+			name = VendiTests;
 			productName = VendiMobileTests;
-			productReference = F7B9434118EF2DEC00943DAE /* VendiMobileTests.xctest */;
+			productReference = F7B9434118EF2DEC00943DAE /* VendiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -221,13 +239,18 @@
 				TargetAttributes = {
 					F7B9432018EF2DEC00943DAE = {
 						DevelopmentTeam = HJ33E666JG;
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					F7B9434018EF2DEC00943DAE = {
 						TestTargetID = F7B9432018EF2DEC00943DAE;
 					};
 				};
 			};
-			buildConfigurationList = F7B9431C18EF2DEC00943DAE /* Build configuration list for PBXProject "VendiMobile" */;
+			buildConfigurationList = F7B9431C18EF2DEC00943DAE /* Build configuration list for PBXProject "Vendi" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -239,8 +262,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F7B9432018EF2DEC00943DAE /* VendiMobile */,
-				F7B9434018EF2DEC00943DAE /* VendiMobileTests */,
+				F7B9432018EF2DEC00943DAE /* Vendi */,
+				F7B9434018EF2DEC00943DAE /* VendiTests */,
 			);
 		};
 /* End PBXProject section */
@@ -252,7 +275,8 @@
 			files = (
 				F7B9435A18EF2E3700943DAE /* iphone.storyboard in Resources */,
 				F7B9433118EF2DEC00943DAE /* InfoPlist.strings in Resources */,
-				F7B9433C18EF2DEC00943DAE /* Images.xcassets in Resources */,
+				F702DB3518F30465000D834F /* Media.xcassets in Resources */,
+				F7B9437E18F1F9CE00943DAE /* ios-linen.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,10 +297,13 @@
 			files = (
 				F7B9436518EF7BFD00943DAE /* InfoSubmitViewController.m in Sources */,
 				F7B9433318EF2DEC00943DAE /* main.m in Sources */,
-				F7B9435F18EF2FBB00943DAE /* VendiViewController.m in Sources */,
 				F7B9433A18EF2DEC00943DAE /* VendiMobile.xcdatamodeld in Sources */,
 				F7B9436218EF789300943DAE /* ImageTakingViewController.m in Sources */,
+				F702DB3A18F31BCD000D834F /* ThankYouViewController.m in Sources */,
 				F7B9433718EF2DEC00943DAE /* VendiAppDelegate.m in Sources */,
+				F702DB3318F20888000D834F /* VendiViewController.m in Sources */,
+				F7B9437718F1E6AE00943DAE /* FirstPhotoViewController.m in Sources */,
+				F7B9437A18F1EEC100943DAE /* VendiSubmitViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +320,7 @@
 /* Begin PBXTargetDependency section */
 		F7B9434818EF2DEC00943DAE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F7B9432018EF2DEC00943DAE /* VendiMobile */;
+			target = F7B9432018EF2DEC00943DAE /* Vendi */;
 			targetProxy = F7B9434718EF2DEC00943DAE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -397,11 +424,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "VendiMobile/VendiMobile-Prefix.pch";
-				INFOPLIST_FILE = "VendiMobile/VendiMobile-Info.plist";
+				GCC_PREFIX_HEADER = "VendiMobile/Vendi-Prefix.pch";
+				INFOPLIST_FILE = "VendiMobile/Vendi-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_NAME = Vendi;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -413,11 +440,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "VendiMobile/VendiMobile-Prefix.pch";
-				INFOPLIST_FILE = "VendiMobile/VendiMobile-Info.plist";
+				GCC_PREFIX_HEADER = "VendiMobile/Vendi-Prefix.pch";
+				INFOPLIST_FILE = "VendiMobile/Vendi-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_NAME = Vendi;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -437,8 +464,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "VendiMobileTests/VendiMobileTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "VendiMobileTests/VendiTests-Info.plist";
+				PRODUCT_NAME = VendiTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -455,8 +482,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VendiMobile/VendiMobile-Prefix.pch";
-				INFOPLIST_FILE = "VendiMobileTests/VendiMobileTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "VendiMobileTests/VendiTests-Info.plist";
+				PRODUCT_NAME = VendiTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -465,7 +492,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F7B9431C18EF2DEC00943DAE /* Build configuration list for PBXProject "VendiMobile" */ = {
+		F7B9431C18EF2DEC00943DAE /* Build configuration list for PBXProject "Vendi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F7B9435118EF2DED00943DAE /* Debug */,
@@ -474,21 +501,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F7B9435318EF2DED00943DAE /* Build configuration list for PBXNativeTarget "VendiMobile" */ = {
+		F7B9435318EF2DED00943DAE /* Build configuration list for PBXNativeTarget "Vendi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F7B9435418EF2DED00943DAE /* Debug */,
 				F7B9435518EF2DED00943DAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		F7B9435618EF2DED00943DAE /* Build configuration list for PBXNativeTarget "VendiMobileTests" */ = {
+		F7B9435618EF2DED00943DAE /* Build configuration list for PBXNativeTarget "VendiTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F7B9435718EF2DED00943DAE /* Debug */,
 				F7B9435818EF2DED00943DAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VendiSubmitViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
-@interface InfoSubmitViewController : UIViewController <NSURLConnectionDataDelegate, UITextFieldDelegate>
+@interface InfoSubmitViewController : UIViewController <UITextFieldDelegate, UITextViewDelegate, UIAlertViewDelegate>
 @property (nonatomic) NSMutableArray *capturedImages;
-- (IBAction)submitInfo:(UIButton *)sender;
+- (IBAction)lastStepButton:(UIButton *)sender;
+
 @end

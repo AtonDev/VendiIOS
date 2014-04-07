@@ -11,5 +11,5 @@
 
 @interface ImageTakingViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate,UICollectionViewDataSource, UICollectionViewDelegate>
 - (IBAction)takePicture:(UIButton *)sender;
-
+@property (nonatomic) NSMutableArray *capturedImages;
 @end

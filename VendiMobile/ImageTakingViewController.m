@@ -9,10 +9,11 @@
 #import "ImageTakingViewController.h"
 
 @interface ImageTakingViewController ()
-
-@property (strong, nonatomic) IBOutlet UILabel *pictureCount;
 @property (strong, nonatomic) IBOutlet UICollectionView *imgCollectionView;
-@property (nonatomic) NSMutableArray *capturedImages;
+@property (strong, nonatomic) IBOutlet UITextView *photoDirections;
+@property NSArray *directionsArray;
+@property (strong, nonatomic) IBOutlet UIButton *nextButton;
+@property (strong, nonatomic) IBOutlet UIButton *takePhotoButton;
 
 @end
 
@@ -22,7 +23,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"nav-title.png"]];
     }
     return self;
 }
@@ -31,11 +32,15 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.capturedImages = [[NSMutableArray alloc]init];
-    self.pictureCount.text = @"0";
+    if (self.capturedImages == nil)
+        self.capturedImages = [[NSMutableArray alloc]init];
     self.imgCollectionView.delegate = self;
     self.imgCollectionView.dataSource = self;
-
+    [self.imgCollectionView reloadData];
+    _directionsArray = [[NSArray alloc] initWithObjects: @"Take a photo of the side", @"Now of the barcode or tag or model number",  @"Take any other relevant photo", nil];
+    _nextButton.hidden = YES;
+    _takePhotoButton.hidden = NO;
+    _photoDirections.text = [_directionsArray objectAtIndex:0];
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,19 +70,24 @@
     }
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
     picker.delegate = self;
-    picker.allowsEditing = YES;
+    picker.allowsEditing = NO;
     picker.sourceType = UIImagePickerControllerSourceTypeCamera;
     
     [self presentViewController:picker animated:YES completion:NULL];
+ 
 }
 
+
+
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
-    UIImage *img = info[UIImagePickerControllerEditedImage];
+    UIImage *img = info[UIImagePickerControllerOriginalImage];
     [self.capturedImages addObject:img];
-    NSUInteger count = [self.capturedImages count];
-    self.pictureCount.text = [ NSString stringWithFormat: @"%d", count];
-    
     [self.imgCollectionView reloadData];
+    self.photoDirections.text = [_directionsArray objectAtIndex: MIN(_capturedImages.count, _directionsArray.count) - 1];
+    if (_capturedImages.count >= 3)
+        _nextButton.hidden = NO;
+    if (_capturedImages.count >= 6)
+        _takePhotoButton.hidden = YES;
     [picker dismissViewControllerAnimated:YES completion:NULL];
 }
 
