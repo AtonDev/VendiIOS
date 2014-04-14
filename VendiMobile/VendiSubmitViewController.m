@@ -59,7 +59,6 @@
 - (IBAction)submitForm:(UIButton *)sender {
     if (_ownerName.text && _ownerName.text.length > 0 && [self hasValidEmail: _ownerEmail.text]) {
         [self sendItemDataToVendi];
-        [self performSegueWithIdentifier: @"toThankYou" sender: self];
     } else {
         NSString *message;
         if ([self hasValidEmail: _ownerEmail.text])
@@ -113,7 +112,7 @@
         }
     }
     [body appendData:[[NSString stringWithFormat:@"--%@--\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
-    NSString *bodyLength = [NSString stringWithFormat:@"%d", [body length]];
+    NSString *bodyLength = [NSString stringWithFormat:@"%lu", (unsigned long)[body length]];
     
     NSMutableURLRequest *complexRequest = [[NSMutableURLRequest alloc] init];
     [complexRequest setURL:[NSURL URLWithString:@"https://vendistaging.herokuapp.com/api/add_item"]];
@@ -129,6 +128,7 @@
 
 #pragma mark - NSURLConnectionData Delegate
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+    NSLog(@"did receive response");
     [self.data setLength:0];
 }
 
@@ -137,12 +137,19 @@
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
-    //NSString *responseText = [[NSString alloc] initWithData:self.data encoding:NSUTF8StringEncoding];
-    //NSLog(responseText);
+    [self performSegueWithIdentifier: @"toThankYou" sender: self];
+    NSString *responseText = [[NSString alloc] initWithData:self.data encoding:NSUTF8StringEncoding];
+    NSLog(responseText);
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
-    //NSLog(error.description);
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning"
+                                                    message:@"An error occured. Make sure that the internet connection is online and try again"
+                                                   delegate:self
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil, nil];
+    [alert show];
+    NSLog(error.description);
 }
 
 

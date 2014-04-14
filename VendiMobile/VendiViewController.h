@@ -13,5 +13,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *startButton;
 @property (strong, nonatomic) IBOutlet UITextView *landingPageText;
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (strong, nonatomic) IBOutlet UIButton *retryButton;
+- (IBAction)retry:(UIButton *)sender;
 
 @end

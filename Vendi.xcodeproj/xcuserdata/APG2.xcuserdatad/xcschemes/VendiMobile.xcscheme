@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F7B9432018EF2DEC00943DAE"
-               BuildableName = "VendiMobile.app"
+               BuildableName = "Vendi.app"
                BlueprintName = "Vendi"
                ReferencedContainer = "container:Vendi.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F7B9434018EF2DEC00943DAE"
-               BuildableName = "VendiMobileTests.xctest"
+               BuildableName = "VendiTests.xctest"
                BlueprintName = "VendiTests"
                ReferencedContainer = "container:Vendi.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F7B9432018EF2DEC00943DAE"
-            BuildableName = "VendiMobile.app"
+            BuildableName = "Vendi.app"
             BlueprintName = "Vendi"
             ReferencedContainer = "container:Vendi.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F7B9432018EF2DEC00943DAE"
-            BuildableName = "VendiMobile.app"
+            BuildableName = "Vendi.app"
             BlueprintName = "Vendi"
             ReferencedContainer = "container:Vendi.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F7B9432018EF2DEC00943DAE"
-            BuildableName = "VendiMobile.app"
+            BuildableName = "Vendi.app"
             BlueprintName = "Vendi"
             ReferencedContainer = "container:Vendi.xcodeproj">
          </BuildableReference>
