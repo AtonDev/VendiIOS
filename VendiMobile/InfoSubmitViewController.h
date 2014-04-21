@@ -9,9 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "VendiSubmitViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface InfoSubmitViewController : UIViewController <UITextFieldDelegate, UITextViewDelegate, UIAlertViewDelegate>
 @property (nonatomic) NSMutableArray *capturedImages;
+@property CLLocationCoordinate2D coordinate;
 - (IBAction)lastStepButton:(UIButton *)sender;
 
 @end

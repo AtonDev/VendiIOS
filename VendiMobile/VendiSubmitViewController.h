@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface VendiSubmitViewController : UIViewController <NSURLConnectionDataDelegate, UITextFieldDelegate, UITextViewDelegate>
 
@@ -14,6 +15,7 @@
 @property (strong, nonatomic) NSString *itemCondition;
 @property (strong, nonatomic) NSString *itemDescription;
 @property (strong, nonatomic) NSMutableArray *capturedImages;
+@property CLLocationCoordinate2D coordinate;
 - (IBAction)submitForm:(UIButton *)sender;
 
 @end

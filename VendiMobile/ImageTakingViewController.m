@@ -14,7 +14,11 @@
 @property NSArray *directionsArray;
 @property (strong, nonatomic) IBOutlet UIButton *nextButton;
 @property (strong, nonatomic) IBOutlet UIButton *takePhotoButton;
+@property  CLLocationCoordinate2D coordinate;
 
+@property (strong, nonatomic) CLLocationManager *cllmanager;
+
+- (void)startLocationMonitoring;
 @end
 
 @implementation ImageTakingViewController
@@ -41,6 +45,9 @@
     _nextButton.hidden = YES;
     _takePhotoButton.hidden = NO;
     _photoDirections.text = [_directionsArray objectAtIndex:0];
+    _cllmanager = [[CLLocationManager alloc]init];
+    _cllmanager.delegate = self;
+    [self startLocationMonitoring];
 }
 
 - (void)didReceiveMemoryWarning
@@ -60,9 +67,23 @@
     if([segue.identifier isEqualToString:@"toInfoForm"]){
         InfoSubmitViewController *controller = (InfoSubmitViewController *)segue.destinationViewController;
         controller.capturedImages = self.capturedImages;
+        controller.coordinate = self.coordinate;
     }
 }
 
+
+#pragma mark - Location Manager Events
+
+- (void)startLocationMonitoring {
+    [_cllmanager startUpdatingLocation];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    CLLocation * location = [locations lastObject];
+    _coordinate = location.coordinate;
+}
+
+#pragma mark - Image Picker
 
 - (IBAction)takePicture:(UIButton *)sender {
     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
