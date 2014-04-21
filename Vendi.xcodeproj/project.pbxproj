@@ -30,6 +30,7 @@
 		F7B9437718F1E6AE00943DAE /* FirstPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9437618F1E6AE00943DAE /* FirstPhotoViewController.m */; };
 		F7B9437A18F1EEC100943DAE /* VendiSubmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9437918F1EEC100943DAE /* VendiSubmitViewController.m */; };
 		F7B9437E18F1F9CE00943DAE /* ios-linen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F7B9437D18F1F9CE00943DAE /* ios-linen.jpg */; };
+		F7E6BFA91905CBFE009AD6EF /* VendiNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E6BFA81905CBFE009AD6EF /* VendiNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		F7B9437818F1EEC100943DAE /* VendiSubmitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VendiSubmitViewController.h; sourceTree = "<group>"; };
 		F7B9437918F1EEC100943DAE /* VendiSubmitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VendiSubmitViewController.m; sourceTree = "<group>"; };
 		F7B9437D18F1F9CE00943DAE /* ios-linen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ios-linen.jpg"; path = "VendiMobile/ios-linen.jpg"; sourceTree = "<group>"; };
+		F7E6BFA71905CBFE009AD6EF /* VendiNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VendiNavigationController.h; sourceTree = "<group>"; };
+		F7E6BFA81905CBFE009AD6EF /* VendiNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VendiNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,8 @@
 				F7B9435918EF2E3700943DAE /* iphone.storyboard */,
 				F702DB3118F20888000D834F /* VendiViewController.h */,
 				F702DB3218F20888000D834F /* VendiViewController.m */,
+				F7E6BFA71905CBFE009AD6EF /* VendiNavigationController.h */,
+				F7E6BFA81905CBFE009AD6EF /* VendiNavigationController.m */,
 				F7B9437518F1E6AE00943DAE /* FirstPhotoViewController.h */,
 				F7B9437618F1E6AE00943DAE /* FirstPhotoViewController.m */,
 				F7B9436018EF789300943DAE /* ImageTakingViewController.h */,
@@ -303,6 +308,7 @@
 				F7B9433718EF2DEC00943DAE /* VendiAppDelegate.m in Sources */,
 				F702DB3318F20888000D834F /* VendiViewController.m in Sources */,
 				F7B9437718F1E6AE00943DAE /* FirstPhotoViewController.m in Sources */,
+				F7E6BFA91905CBFE009AD6EF /* VendiNavigationController.m in Sources */,
 				F7B9437A18F1EEC100943DAE /* VendiSubmitViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

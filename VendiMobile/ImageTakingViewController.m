@@ -14,7 +14,7 @@
 @property NSArray *directionsArray;
 @property (strong, nonatomic) IBOutlet UIButton *nextButton;
 @property (strong, nonatomic) IBOutlet UIButton *takePhotoButton;
-@property  CLLocationCoordinate2D coordinate;
+@property  CLLocation* location;
 
 @property (strong, nonatomic) CLLocationManager *cllmanager;
 
@@ -67,7 +67,7 @@
     if([segue.identifier isEqualToString:@"toInfoForm"]){
         InfoSubmitViewController *controller = (InfoSubmitViewController *)segue.destinationViewController;
         controller.capturedImages = self.capturedImages;
-        controller.coordinate = self.coordinate;
+        controller.location = self.location;
     }
 }
 
@@ -79,8 +79,7 @@
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
-    CLLocation * location = [locations lastObject];
-    _coordinate = location.coordinate;
+    _location = [locations lastObject];
 }
 
 #pragma mark - Image Picker

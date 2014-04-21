@@ -15,7 +15,7 @@
 @property (strong, nonatomic) NSString *itemCondition;
 @property (strong, nonatomic) NSString *itemDescription;
 @property (strong, nonatomic) NSMutableArray *capturedImages;
-@property CLLocationCoordinate2D coordinate;
+@property CLLocation* location;
 - (IBAction)submitForm:(UIButton *)sender;
 
 @end

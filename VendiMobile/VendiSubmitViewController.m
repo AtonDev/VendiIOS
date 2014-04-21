@@ -11,6 +11,8 @@
 @interface VendiSubmitViewController ()
 @property (strong, nonatomic) IBOutlet UITextField *ownerName;
 @property (strong, nonatomic) IBOutlet UITextField *ownerEmail;
+@property (strong, nonatomic) IBOutlet UITextField *zipcodeField;
+@property (strong, nonatomic) IBOutlet UILabel *zipcodeLabel;
 @property (strong) NSMutableData * data;
 - (BOOL) sendItemDataToVendi;
 - (BOOL) hasValidEmail: (NSString *)email;
@@ -33,6 +35,11 @@
     _ownerName.delegate = self;
     _ownerEmail.delegate = self;
     _data = [[NSMutableData alloc]init];
+    NSLog(@"lat: %f, long: %f", _location.coordinate.latitude, _location.coordinate.longitude);
+    if (_location) {
+        _zipcodeField.hidden = YES;
+        _zipcodeLabel.hidden = YES;
+    }
     
     // Do any additional setup after loading the view.
 }
@@ -57,7 +64,9 @@
 }
 
 - (IBAction)submitForm:(UIButton *)sender {
-    if (_ownerName.text && _ownerName.text.length > 0 && [self hasValidEmail: _ownerEmail.text]) {
+    if (_ownerName.text && _ownerName.text.length > 0
+        && !_zipcodeField.hidden && _zipcodeField.text && _zipcodeField.text.length > 0
+        && [self hasValidEmail: _ownerEmail.text]) {
         [self sendItemDataToVendi];
     } else {
         NSString *message;
@@ -84,13 +93,27 @@
 }
 
 - (BOOL) sendItemDataToVendi {
-    NSDictionary *params = @{
-                             @"name" : _ownerName.text,
-                             @"email" : _ownerEmail.text,
-                             @"title" : _itemTitle,
-                             @"condition" : _itemCondition,
-                             @"description" : _itemDescription
-                             };
+    NSDictionary *params;
+    if (_location) {
+        params = @{
+                    @"name" : _ownerName.text,
+                    @"email" : _ownerEmail.text,
+                    @"title" : _itemTitle,
+                    @"condition" : _itemCondition,
+                    @"description" : _itemDescription,
+                    @"latitude" : [[NSNumber numberWithDouble:_location.coordinate.latitude] stringValue],
+                    @"longitude" : [[NSNumber numberWithDouble:_location.coordinate.longitude] stringValue]
+                };
+    } else {
+        params = @{
+                    @"name" : _ownerName.text,
+                    @"email" : _ownerEmail.text,
+                    @"title" : _itemTitle,
+                    @"condition" : _itemCondition,
+                    @"description" : _itemDescription,
+                    @"zipcode" : _zipcodeField.text
+                };
+    }
     NSMutableData *body = [NSMutableData data];
     NSString *boundary = @"asdf9876adf9876xvb9876a89d9a8f7a6";
     for (NSString *param in params) {

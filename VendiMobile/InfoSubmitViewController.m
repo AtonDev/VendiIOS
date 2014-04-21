@@ -77,7 +77,7 @@
         controller.itemTitle = self.itemTitle.text;
         controller.itemDescription = self.itemDescription.text;
         controller.itemCondition = self.itemCondition.text;
-        controller.coordinate = self.coordinate;
+        controller.location = self.location;
     }
 }
 

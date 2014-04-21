@@ -13,7 +13,7 @@
 
 @interface InfoSubmitViewController : UIViewController <UITextFieldDelegate, UITextViewDelegate, UIAlertViewDelegate>
 @property (nonatomic) NSMutableArray *capturedImages;
-@property CLLocationCoordinate2D coordinate;
+@property CLLocation* location;
 - (IBAction)lastStepButton:(UIButton *)sender;
 
 @end
