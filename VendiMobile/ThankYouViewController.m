@@ -35,7 +35,8 @@
 }
 
 - (void) goToHome {
-    [self performSegueWithIdentifier:@"toHome" sender:self];
+    UIViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"firstView"];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

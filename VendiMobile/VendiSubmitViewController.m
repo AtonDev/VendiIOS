@@ -65,13 +65,13 @@
 
 - (IBAction)submitForm:(UIButton *)sender {
     if (_ownerName.text && _ownerName.text.length > 0
-        && !_zipcodeField.hidden && _zipcodeField.text && _zipcodeField.text.length > 0
         && [self hasValidEmail: _ownerEmail.text]) {
         [self sendItemDataToVendi];
+        [self performSegueWithIdentifier: @"toThankYou" sender: self];
     } else {
         NSString *message;
         if ([self hasValidEmail: _ownerEmail.text])
-            message = @"Please don't leave the name field empty.";
+            message = @"Please don't leave any field empty.";
         else
             message = @"Please enter a valid email adress. It is important that we are able to contact you.";
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@""
@@ -160,7 +160,6 @@
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
-    [self performSegueWithIdentifier: @"toThankYou" sender: self];
     NSString *responseText = [[NSString alloc] initWithData:self.data encoding:NSUTF8StringEncoding];
     NSLog(responseText);
 }
