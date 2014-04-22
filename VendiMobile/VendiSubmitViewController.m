@@ -14,8 +14,9 @@
 @property (strong, nonatomic) IBOutlet UITextField *zipcodeField;
 @property (strong, nonatomic) IBOutlet UILabel *zipcodeLabel;
 @property (strong) NSMutableData * data;
-- (BOOL) sendItemDataToVendi;
-- (BOOL) hasValidEmail: (NSString *)email;
+- (BOOL)sendItemDataToVendi;
+- (BOOL)hasValidEmail: (NSString *)email;
+- (BOOL)hasValidZipCode;
 @end
 
 @implementation VendiSubmitViewController
@@ -65,7 +66,8 @@
 
 - (IBAction)submitForm:(UIButton *)sender {
     if (_ownerName.text && _ownerName.text.length > 0
-        && [self hasValidEmail: _ownerEmail.text]) {
+        && [self hasValidEmail: _ownerEmail.text]
+        && [self hasValidZipCode]) {
         [self sendItemDataToVendi];
         [self performSegueWithIdentifier: @"toThankYou" sender: self];
     } else {
@@ -90,6 +92,14 @@
     NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
     
     return email && [emailTest evaluateWithObject:email];
+}
+
+- (BOOL)hasValidZipCode {
+    if (_zipcodeField.hidden) {
+        return YES;
+    } else {
+        return _zipcodeField.text && _zipcodeField.text.length > 0;
+    }
 }
 
 - (BOOL) sendItemDataToVendi {
